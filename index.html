@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str= "target";
+        var temp;
+        var str1=[];
+        let n=str.length;
+        document.write("Given str :"+str);
+        document.write("<br>Rotation of String starts here:")
+        var str2="";
+        for(let i=0;i<n;i++){ 
+            str1[n-1]=str[0];      
+            for(let j=1;j<n-1;j++){
+                str1[j-1]=str[j];
+                str1[j]=str[j+1];
+            }
+            var str2="";
+            for(let k=0;k<n;k++){
+                str2=str2.concat(str1[k]);
+            }
+            document.write("<br>"+str2);
+            var str="";
+            str=str2;    
+            
+        }
+        
+        
+       
+    </script>
+</body>
+</html>
